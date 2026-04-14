@@ -29,6 +29,11 @@
 </div>
 
 <style>
+	:global(body) {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+		min-height: 100vh;
+	}
+
 	section.hero {
 		max-width: 960px;
 		margin: 0 auto;

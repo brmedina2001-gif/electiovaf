@@ -45,9 +45,34 @@
 	.card {
 		overflow: hidden;
 		border-radius: 20px;
-		border: 1px solid rgba(0, 0, 0, 0.08);
-		background: #ffffff;
-		box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+		border: 2px solid rgba(102, 126, 234, 0.3);
+		background: rgba(255, 255, 255, 0.95);
+		box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+		transition: all 0.3s ease;
+		animation: glow 3s ease-in-out infinite;
+	}
+
+	.card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 16px 48px rgba(102, 126, 234, 0.3);
+	}
+
+	@keyframes float {
+		0%, 100% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-8px);
+		}
+	}
+
+	@keyframes glow {
+		0%, 100% {
+			box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+		}
+		50% {
+			box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+		}
 	}
 
 	img {
@@ -55,6 +80,14 @@
 		width: 100%;
 		height: 220px;
 		object-fit: cover;
+		border: 3px solid rgba(102, 126, 234, 0.6);
+		border-radius: 15px;
+		transition: transform 0.3s ease, filter 0.3s ease;
+	}
+
+	img:hover {
+		transform: scale(1.05) translateY(-5px);
+		filter: brightness(1.1);
 	}
 
 	.content {
