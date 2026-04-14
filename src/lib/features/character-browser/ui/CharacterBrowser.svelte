@@ -30,7 +30,7 @@
 
 <style>
 	:global(body) {
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+		background: linear-gradient(135deg, #667eea 0%, #0a07b1 50%, #990ca8 100%);
 		min-height: 100vh;
 	}
 
